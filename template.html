@@ -10,10 +10,10 @@
     @media only screen and (max-width: 600px) {
       .mobile-button {
         padding: 10px 7px !important;
-        font-size: 8px !important;
+        font-size: 10px !important;
       }
       .mobile-links {
-        font-size: 14px !important;
+        font-size: 16px !important;
         margin: 8px 8px !important;
         line-height: 1.8 !important;
       }
@@ -21,7 +21,35 @@
         display: none;
       }
       .mobile-container {
-        padding: 24px 16px 20px !important;
+        padding: 0px 16px 20px !important;
+      }
+    }
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFFF;
+      }
+      html {
+        size: A4;
+        margin: 0;
+      }
+      .main-table {
+        max-width: 210mm !important;
+        width: 210mm !important;
+        background-color: #FFFFFF;
+      }
+      .inner-table {
+        max-width: 210mm !important;
+        width: 210mm !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+      }
+      .mobile-container {
+        padding: 20px 15mm !important;
+      }
+      ul {
+        font-size: 19px !important;
       }
     }
   </style>
@@ -31,12 +59,11 @@
 </head>
 <body style="margin:0;padding:0;background-color:#F0F4F8;font-family:Georgia,'Times New Roman',serif;">
 
-  
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F0F4F8;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="main-table" style="background-color:#F0F4F8;">
     <tr>
-      <td align="center" style="padding:40px 16px;">
+      <td align="center" style="padding:20px 8px;">
 
-        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="inner-table"
           style="max-width:620px;background-color:#FFFFFF;border-radius:16px;overflow:hidden;box-shadow:0 8px 40px rgba(0,40,80,0.10);">
 
           <!-- HEADER -->
@@ -49,8 +76,8 @@
                 <img
                   src="https://res.cloudinary.com/demzgbjkv/image/upload/q_auto/f_auto/v1776945811/n18_version_db3cvz.jpg"
                   alt="Image de présentation"
-                  width="620"
-                  style="display:block;width:100%;max-width:620px;height:auto;border:0;"
+                  width="100%"
+                  style="display:block;width:100%;height:auto;border:0;"
                 />
               </a>
             </td>
@@ -58,109 +85,100 @@
 
           <!-- BODY -->
           <tr>
-            <td class="mobile-container" style="padding:44px 44px 36px;">
+            <td class="mobile-container" style="padding: 22PX;padding-top: 0px;float: left;margin-top: -2px;">
 
               <!-- TEXTE PRINCIPAL -->
-              <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.7;">
+              <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:16px;color:#333;line-height:1.5;">
                 <strong>Madame,Monsieur,</strong>
               </p>
 
-              <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.7;">
+              <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:16px;color:#333;line-height:1.5;">
                 À l'occasion de la <strong>FIM 2026</strong>, BICI vous invite à découvrir <strong>ASYNC</strong>, l'ERP conçu pour les réalités d'Afrique.
               </p>
 
-              <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.7;">
+              <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:16px;color:#333;line-height:1.5;">
                 Une solution moderne, agile et personnalisable, pensée pour offrir une meilleure maîtrise des opérations, un pilotage renforcé et une croissance durable.
               </p>
 
-              <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.7;font-weight:bold;">
+              <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:15px;color:#333;line-height:1.5;font-weight:bold;">
                 Idéal pour les entreprises qui :
               </p>
 
-              <ul style="margin:0 0 16px 20px;padding:0;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.7;">
-                <li style="margin:0 0 6px;">fonctionnent encore en partie sous Excel ;</li>
-                <li style="margin:0 0 6px;">utilisent un logiciel devenu contraignant ;</li>
-                <li style="margin:0 0 6px;">cumulent plusieurs outils hétérogènes ;</li>
-                <li style="margin:0 0 6px;">recherchent des reportings fiables et sur mesure.</li>
-              </ul>
+              <p style="margin:0 0 4px;font-family:Georgia,serif;font-size:16px;color:#333;line-height:1.6;">• fonctionnent encore en partie sous Excel ;</p>
+              <p style="margin:0 0 4px;font-family:Georgia,serif;font-size:16px;color:#333;line-height:1.6;">• utilisent un logiciel devenu contraignant ;</p>
+              <p style="margin:0 0 4px;font-family:Georgia,serif;font-size:16px;color:#333;line-height:1.6;">• cumulent plusieurs outils hétérogènes ;</p>
+              <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:16px;color:#333;line-height:1.6;">• recherchent des reportings fiables et sur mesure.</p>
 
-              <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.7;">
+              <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:15px;color:#333;line-height:1.5;">
                 Même avec des solutions existantes, <strong>ASYNC peut cohabiter</strong> avec votre environnement actuel et exploiter les données déjà en place.
               </p>
 
-              <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.7;">
+              <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:15px;color:#333;line-height:1.5;">
                 Nous vous réservons un <strong>rendez-vous privé de démonstration</strong>, orienté sur vos enjeux réels et vos priorités de croissance.
               </p>
 
               <!-- INFOS EVENT -->
-              <div style="background:#f0f4f8;border-left:4px solid #2563EB;border-radius:0 6px 6px 0;padding:16px;margin:20px 0;">
-                <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:13px;color:#333;line-height:1.6;">
-                  📅 <strong>7 au 10 mai 2026</strong>
-                </p>
-                <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:13px;color:#333;line-height:1.6;">
-                  ⏰ <strong>Sur rendez-vous</strong>
-                </p>
-                <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:13px;color:#333;line-height:1.6;">
-                  📍 <strong>FIM – CCI Ivato</strong>
-                </p>
-                <p style="margin:0;font-family:Georgia,serif;font-size:13px;color:#333;line-height:1.6;">
-                  🏁 <strong>Stand n° 18' BICI – ASYNC</strong>
+              <div style="background:#f0f4f8;border-left:4px solid #2563EB;border-radius:0 6px 6px 0;padding:6px;margin:8px 0;">
+                <p style="margin:0;font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.5;">
+                  📅 <strong>7 au 10 mai 2026</strong> · ⏰ <strong>Sur rendez-vous</strong> · 📍 <strong>FIM – CCI Ivato</strong> · 🏁 <strong>Stand n° 18' BICI – ASYNC</strong>
                 </p>
               </div>
 
-              <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:13px;color:#555;line-height:1.7;">
-                <strong>Les créneaux étant limités :</strong>
+              <p style="margin:0 0 6px;font-family:Georgia,serif;font-size:14px;color:#555;line-height:1.5;font-weight:bold;">
+                📞 Les créneaux étant limités :
               </p>
 
-              <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:13px;color:#555;line-height:1.7;">
-                📞 Appelez directement au <strong>+261 38 22 300 26</strong>
+              <p style="margin:0 0 6px;font-family:Georgia,serif;font-size:14px;color:#555;line-height:1.5;">
+                <strong>Appel :</strong> <a href="tel:+261382230026" style="color:#2563EB;text-decoration:none;"><strong>+261 38 22 300 26</strong></a>
               </p>
 
-              <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:13px;color:#555;line-height:1.7;">
-                ✉️ Ou envoyez un mail à <a href="mailto:contact@bici.mg" style="color:#2563EB;text-decoration:underline;">contact@bici.mg</a> ou <a href="mailto:contact.bicimada@gmail.com" style="color:#2563EB;text-decoration:underline;">contact.bicimada@gmail.com</a>
+              <p style="margin:0 0 6px;font-family:Georgia,serif;font-size:14px;color:#555;line-height:1.5;">
+                <strong>Email :</strong> <a href="mailto:contact@bici.mg" style="color:#2563EB;text-decoration:underline;">contact@bici.mg</a> ou <a href="mailto:contact.bicimada@gmail.com" style="color:#2563EB;text-decoration:underline;">contact.bicimada@gmail.com</a>
               </p>
 
               <!-- Divider -->
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:20px 0 20px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:6px 0;">
                 <tr><td style="border-top:1px solid #E2E8F0;font-size:0;line-height:0;">&nbsp;</td></tr>
               </table>
 
               <!-- CTA BUTTON -->
-              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto 28px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto 8px;">
                 <tr>
-                  <td align="center" style="border-radius:99px;background-color:#2563EB;box-shadow:0 6px 24px rgba(37,99,235,0.38);">
+                  <td align="center" style="border-radius:6px;background-color:#2563EB;">
                     <!--[if mso]>
                     <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfOiHcj4fhKnhNnKswYXb21iIezISVZT9lH91RCu5NM39QONQ/viewform" style="height:54px;v-text-anchor:middle;width:280px;" arcsize="50%"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfOiHcj4fhKnhNnKswYXb21iIezISVZT9lH91RCu5NM39QONQ/viewform" style="height:44px;v-text-anchor:middle;width:260px;" arcsize="6%"
                       strokecolor="#2563EB" fill="t">
                       <v:fill type="tile" color="#2563EB"/>
                       <w:anchorlock/>
-                      <center style="color:#FFFFFF;font-family:'Trebuchet MS',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">Réservez votre créneau</center>
+                      <center style="color:#FFFFFF;font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:700;">Réservez votre créneau</center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOiHcj4fhKnhNnKswYXb21iIezISVZT9lH91RCu5NM39QONQ/viewform" target="_blank"
                       class="mobile-button"
-                      style="display:inline-block;padding:17px 44px;background-color:#2563EB;color:#FFFFFF;text-decoration:none;font-family:'Trebuchet MS',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;border-radius:99px;">
-                      Ou réservez votre créneau via ce formulaire &nbsp;→
+                      style="display:inline-block;padding:12px 32px;background-color:#2563EB;color:#FFFFFF;text-decoration:none;font-family:'Trebuchet MS',sans-serif;font-size:15px;font-weight:700;border-radius:6px;">
+                      Réservez votre créneau
                     </a>
                     <!--<![endif]-->
                   </td>
                 </tr>
               </table>
 
-              <p style="margin:0 0 24px;text-align:center;font-family:Georgia,serif;font-size:13px;color:#555;line-height:1.7;">
-                Nous serons ravis d'échanger avec vous et de vous accompagner dans l'optimisation de vos processus et la croissance de votre entreprise.
+              <p style="margin:0 0 6px;text-align:center;font-family:Georgia,serif;font-size:14px;color:#555;line-height:1.5;">
+                Nous serons ravis d'échanger avec vous et de vous accompagner dans l'optimisation de vos processus.
               </p>
 
-              <p style="margin:0 0 24px;text-align:center;font-family:Georgia,serif;font-size:13px;color:#666;line-height:1.7;">
-                <strong>À très bientôt à la FIM 2026.</strong>
-              </p>
+              <p style="margin:0 0 8px;text-align:center;font-family:Georgia,serif;font-size:14px;color:#666;font-weight:bold;line-height:1.5;">
+                À très bientôt à la FIM 2026.
 
-              <p style="margin:0;text-align:center;font-family:Georgia,serif;font-size:12px;color:#94A3B8;line-height:1.8;">
-                <a href="https://bici.mg/" class="mobile-links" style="color:#2563EB;text-decoration:underline;margin:0 12px;display:inline-block;font-size:15px;">www.bici.mg</a>
+                <a href="https://bici.mg/" class="mobile-links" style="color:#2563EB;text-decoration:underline;margin:0 6px;display:inline-block;font-size:13px;">www.bici.mg</a>
                 <span style="color:#94A3B8;">·</span>
-                <a href="https://async.mg/" class="mobile-links" style="color:#2563EB;text-decoration:underline;margin:0 12px;display:inline-block;font-size:15px;">www.async.mg</a>
+                <a href="https://async.mg/" class="mobile-links" style="color:#2563EB;text-decoration:underline;margin:0 6px;display:inline-block;font-size:13px;">www.async.mg</a>
+              </p>
+
+              <p style="margin:0;text-align:center;font-family:Georgia,serif;font-size:13px;color:#94A3B8;line-height:1.5;">
+                
               </p>
 
             </td>

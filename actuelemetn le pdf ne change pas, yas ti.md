@@ -1,0 +1,1 @@
+actuelemetn le pdf ne change pas, yas til du cah, ou bine une autre logique qui intreprete l'ancient UI ?
